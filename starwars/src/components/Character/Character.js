@@ -9,7 +9,12 @@ export default function Character (props) {
 			<CardStyle className="content-wrapper">
 				<StyledH2 color="brown">{props.name}</StyledH2>
 				<Card.Content>
+					<p>Created: {props.created}</p>
 					<p>Birth year: {props.birthyear}</p>
+					<p>Gender: {props.gender}</p>
+					<p>Films: {props.films}</p>
+					<p>Starships: {props.starships}</p>
+					<p>Vehicles: {props.vehicles}</p>
 				</Card.Content>
 			</CardStyle>
 		</CardDisplay>
