@@ -15,6 +15,7 @@ export const StyledH2 = styled.h2`
 export const CardStyle = styled.div`
 	background-color: white;
 	height: auto;
+	margin: 16px 0;
 `;
 
 export const CardDisplay = styled.div`
@@ -25,6 +26,7 @@ export const CardDisplay = styled.div`
 	width: 400px;
 	background-color: white;
 	margin: 15px;
-	border: 1px solid black;
+	border: 1px solid #b96900;
 	border-radius: 10px;
+	box-shadow: 2px 2px 10px 5px #b96900 inset;
 `;

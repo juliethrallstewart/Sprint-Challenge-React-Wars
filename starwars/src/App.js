@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import Character from '../src/components/Card/Card.js';
+import Character from '../src/components/Character/Character.js';
 
 const starWarsAPI = 'https://swapi.co/api/people/';
 
@@ -42,12 +42,25 @@ const App = () => {
 			API
 		]
 	);
+
+	console.log(content);
 	return (
 		<div className="App">
 			<div className="HeaderWrapper">
 				<h1 className="Header">React Wars</h1>
 			</div>
-			{people.map((data, index) => <Character key={index} name={data.name} birthyear={data.birth_year} />)}
+			{people.map((data, index) => (
+				<Character
+					key={index}
+					name={data.name}
+					birthyear={data.birth_year}
+					created={data.created}
+					films={data.films.length}
+					gender={data.gender}
+					starships={data.starships.length}
+					vehicles={data.vehicles.length}
+				/>
+			))}
 		</div>
 	);
 };
