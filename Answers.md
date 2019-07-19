@@ -22,3 +22,5 @@ used as props in components in React.
 Side effects are a potential whenever any interface with an outside API or internal dependencies 
 makes unpredicatable mutations. To sync effects and prevent side effects in a React component 
 it is important to use the hook: useEffect. 
+
+Done!
