@@ -5,17 +5,18 @@ const colors = {
 };
 
 export const StyledH2 = styled.h2`
-	margin-top: 0;
-	padding-top: 25px;
-	//color: ${colors.grey};
+	padding-bottom: 15px;
+	padding-top: 0;
+	// color: ${colors.grey};
 	color: ${(props) => props.color};
 	background-color: linear-gradient(${colors.grey}, #ffffff);
 `;
 
 export const CardStyle = styled.div`
-	background-color: white;
-	height: auto;
+	background-color: #ffecb3;
+	height: 200px;
 	margin: 16px 0;
+	line-height: 5px;
 `;
 
 export const CardDisplay = styled.div`
@@ -24,9 +25,10 @@ export const CardDisplay = styled.div`
 	align-items: center;
 	flex-wrap: wrap;
 	width: 400px;
-	background-color: white;
+	background-color: #ffecb3;
 	margin: 15px;
 	border: 1px solid #b96900;
-	border-radius: 10px;
+	border-radius: 20px;
 	box-shadow: 2px 2px 10px 5px #b96900 inset;
+	height: auto;
 `;
